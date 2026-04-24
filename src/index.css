@@ -1,0 +1,71 @@
+:root {
+  --bg: #f4efe5;
+  --panel: rgba(255, 250, 244, 0.84);
+  --soft-bg: rgba(255, 255, 255, 0.68);
+  --text: #584e45;
+  --text-h: #18120d;
+  --text-secondary: #8b7969;
+  --border: rgba(93, 74, 55, 0.16);
+  --accent: #cc5b2c;
+  --shadow: 0 20px 40px rgba(84, 60, 31, 0.12);
+  --sans: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --heading: Georgia, 'Times New Roman', serif;
+  --mono: 'Cascadia Code', Consolas, monospace;
+  color: var(--text);
+  background: var(--bg);
+  font: 18px/1.5 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(255, 207, 118, 0.42), transparent 32%),
+    linear-gradient(180deg, #efe5d6 0%, #f9f6f0 44%, #efe9de 100%);
+}
+
+#root {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  min-height: 100svh;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--text-h);
+  font-family: var(--heading);
+  font-weight: 700;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+code,
+pre {
+  font-family: var(--mono);
+}
